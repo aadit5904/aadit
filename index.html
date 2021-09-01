@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <title>TAD</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <h2 class="logo">TAD</h2>
+                <div class="toggle  "></div>
+            </header>
+            <video src="travel.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>Walkathon</h2>
+                <h3>This was our first charity movement.</h3>
+                    <p>We held a walkathon with cash prizes. Many participants donated for this noble cause and walked on 15th August, 2021. The mobile phones and school fees were given to the needy on 21st August, 2021. </p>   
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>  
+    </body>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</html>
